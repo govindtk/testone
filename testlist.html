@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href="https://www.retailmenot.com/www/gui/build/webpack/design-standards/store-a945afa6f4f444aad6e22886723810e9.css"/> -->
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/govindtk/testone/e42e7180/style.css"/> -->
+  <link rel="stylesheet" type="text/css" href="new.css"/>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
+</head>
+<body>
+
+<!-- <ul class="coupon-list js-offers">
+	<li class="js-offer-toggle ">
+		<div class="offer-item offer-item-in-list js-offer">
+			<div class="offer-item-content">
+				<div class="offer-anchor">
+					<div class="coupon-anchor-code">
+						<div class="coupon-anchor-amount"> 35%<br>OFF </div>
+							<div class="coupon-anchor-label">Code</div>
+					</div>
+				</div>
+
+				<div class="offer-actions">
+        <div class="code-attached-copy">
+        <div class="button-code js-selectcode" style="font-size: 21px !important" id="visibleinput">CJCRMN35</div>
+        <button class="button button-primary js-copy" style="font-size: 12px !important" id="copy-button" data-clipboard-target="#visibleinput">Copy</button>
+        </div>
+					<a href="" class="button-show-code offer-button" data-revealed-code="35">Show Coupon Code</a>
+				</div>
+
+				<div class="offer-content">
+					<a href="" class="offer-title">35% Off New Products</a>
+						<div class="offer-details">
+							<div class="offer-expiration has-separator-dot">Expires 08/31/17</div>
+						</div>
+						<div class="offer-description-exclusions">sffsfsfsfsfs fsskjfhkajhfkjashkfjhasjk hashfadfkha kfashfhas</div>
+				</div>
+			</div>
+			<div class="offer-drawer offer-drawer-exclusive">
+				<span class="offer-drawer-content-type">Exclusive</span>
+				<span class="offer-drawer-content-text">This offer is only found on mysite</span>
+			</div>
+		</div>
+	</li>
+</ul>
+<table id="demo"></table> -->
+<ul class="coupon-list js-offers" id="demoid"></ul>
+<!-- <script type="text/javascript">
+(function(){
+    new Clipboard('#copy-button');
+})();
+</script> -->
+
+<!-- <script>
+loadXMLDoc()
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "cd_catalog.xml", true);
+  xmlhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Artist</th><th>Title</th></tr>";
+  var x = xmlDoc.getElementsByTagName("CD");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+ -->
+
+<script>
+loadXMLDocF()
+function loadXMLDocF() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunctionF(this);
+    }
+  };
+  xmlhttp.open("GET", "https://cdn.rawgit.com/govindtk/testone/e42e7180/myfile.xml", true);
+  xmlhttp.send();
+}
+function myFunctionF(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table='';
+  var x = xmlDoc.getElementsByTagName("coupon");
+  for (i = 0; i <x.length; i++) { 
+    table += '<li class="js-offer-toggle "><div class="offer-item offer-item-in-list js-offer"><div class="offer-item-content"><div class="offer-anchor"><div class="coupon-anchor-code"><div class="coupon-anchor-amount">' +
+    x[i].getElementsByTagName("amount")[0].childNodes[0].nodeValue +
+    '%<br>OFF </div><div class="coupon-anchor-label">Code</div></div></div><div class="offer-actions"><a href="" class="button-show-code offer-button" data-revealed-code="' +
+    x[i].getElementsByTagName("code")[0].childNodes[0].nodeValue +
+    '">Show Coupon Code</a></div><div class="offer-content"><a href="" class="offer-title">' +
+    x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+    '</a><div class="offer-details"><div class="offer-expiration has-separator-dot">Expires ' +
+    x[i].getElementsByTagName("expiration")[0].childNodes[0].nodeValue +
+    '</div></div><div class="offer-description-exclusions">' +
+    x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue + 
+    '</div></div></div><div class="offer-drawer offer-drawer-exclusive"><span class="offer-drawer-content-type">Exclusive :</span><span class="offer-drawer-content-text">This offer is only found on our site</span></div></div></li>';
+  }
+  document.getElementById("demoid").innerHTML = table;
+}
+</script>
+</body>
+</html>
