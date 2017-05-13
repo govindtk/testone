@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<godaddy>
+<coupon>
+	<amount>40</amount>
+	<title>test title 1</title>
+	<expiration>19/10/2017</expiration>
+	<code>12345</code>
+	<description>test description 1</description>
+</coupon>
+<coupon>
+	<amount>43</amount>
+	<title>test title 2</title>
+	<expiration>30/10/2018</expiration>
+	<code>67890</code>
+	<description>test description 2</description>
+</coupon>
+<coupon>
+	<amount>87</amount>
+	<title>test title 3</title>
+	<expiration>5/1/2019</expiration>
+	<code>678944</code>
+	<description>test description 3</description>
+</coupon>
+
+</godaddy>
