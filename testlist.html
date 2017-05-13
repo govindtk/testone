@@ -14,15 +14,12 @@
 
 <script type="text/javascript">
 
-
             $(document).on("click", ".code-view", function () {
               
                  var coupon_code = $(this).data('id');
-                 //alert(coupon_code);
                  document.getElementById('showid').innerHTML=coupon_code;
-                 //$("#showid").val( coupon_code );
-                 //$('#myModal').modal('show');
             });
+
             new Clipboard('.js-copy');
 
             function copiedFun() {
@@ -32,10 +29,7 @@
                     change.innerHTML = "Copied";
                 }
             }
-
-
-            </script>
-
+</script>
 
 <div class="container">
   <h2>Small Modal</h2>
