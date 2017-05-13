@@ -2,12 +2,71 @@
 <html>
 <head>
 	<title></title>
-	<!-- <link rel="stylesheet" type="text/css" href="https://www.retailmenot.com/www/gui/build/webpack/design-standards/store-a945afa6f4f444aad6e22886723810e9.css"/> -->
+	<link rel="stylesheet" type="text/css" href="https://www.retailmenot.com/www/gui/build/webpack/design-standards/store-a945afa6f4f444aad6e22886723810e9.css"/>
   <!-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/govindtk/testone/e42e7180/style.css"/> -->
-  <link rel="stylesheet" type="text/css" href="new.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="new.css"/> -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+<script type="text/javascript">
+
+
+            $(document).on("click", ".code-view", function () {
+              
+                 var coupon_code = $(this).data('id');
+                 //alert(coupon_code);
+                 document.getElementById('showid').innerHTML=coupon_code;
+                 //$("#showid").val( coupon_code );
+                 //$('#myModal').modal('show');
+            });
+            new Clipboard('.js-copy');
+
+            function copiedFun() {
+                var change = document.getElementById("copybtn");
+                if (change.innerHTML == "Copy")
+                {
+                    change.innerHTML = "Copied";
+                }
+            }
+
+
+            </script>
+
+
+<div class="container">
+  <h2>Small Modal</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg code-view" data-id="11111111" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <div class="offer-redemption-block">
+            <div class="coupon-code">
+              <p class="offer-tip">Copy and paste this code at <a class="js-merchant-link" target="_blank" href="https://godaddy.com" rel="nofollow">godaddy.com</a></p>
+              <div class="code-attached-copy">
+                 <div id="showid" class="button-code js-selectcode"></div><button id="copybtn" class="button button-primary js-copy btn" type="button" onclick="copiedFun()" data-clipboard-target="#showid">Copy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button button-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- <ul class="coupon-list js-offers">
 	<li class="js-offer-toggle ">
@@ -89,7 +148,8 @@ function loadXMLDocF() {
       myFunctionF(this);
     }
   };
-  xmlhttp.open("GET", "https://cdn.rawgit.com/govindtk/testone/e42e7180/myfile.xml", true);
+  //xmlhttp.open("GET", "https://cdn.rawgit.com/govindtk/testone/e42e7180/myfile.xml", true);
+  xmlhttp.open("GET", "godaddy.xml", true);
   xmlhttp.send();
 }
 function myFunctionF(xml) {
@@ -100,18 +160,25 @@ function myFunctionF(xml) {
   for (i = 0; i <x.length; i++) { 
     table += '<li class="js-offer-toggle "><div class="offer-item offer-item-in-list js-offer"><div class="offer-item-content"><div class="offer-anchor"><div class="coupon-anchor-code"><div class="coupon-anchor-amount">' +
     x[i].getElementsByTagName("amount")[0].childNodes[0].nodeValue +
-    '%<br>OFF </div><div class="coupon-anchor-label">Code</div></div></div><div class="offer-actions"><a href="" class="button-show-code offer-button" data-revealed-code="' +
+    '%<br>OFF </div><div class="coupon-anchor-label">Code</div></div></div><div class="offer-actions"><a href="" class="button-show-code offer-button code-view" data-id="' +
     x[i].getElementsByTagName("code")[0].childNodes[0].nodeValue +
-    '">Show Coupon Code</a></div><div class="offer-content"><a href="" class="offer-title">' +
+    '" data-toggle="modal" data-target="#myModal" data-revealed-code="' +
+    x[i].getElementsByTagName("code")[0].childNodes[0].nodeValue +
+    '">Show Coupon Code</a></div><div class="offer-content"><a href="#myModal" class="offer-title code-view" data-id="' +
+    x[i].getElementsByTagName("code")[0].childNodes[0].nodeValue +
+    '" data-toggle="modal" data-target="#myModal" >' +
     x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
     '</a><div class="offer-details"><div class="offer-expiration has-separator-dot">Expires ' +
     x[i].getElementsByTagName("expiration")[0].childNodes[0].nodeValue +
     '</div></div><div class="offer-description-exclusions">' +
     x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue + 
-    '</div></div></div><div class="offer-drawer offer-drawer-exclusive"><span class="offer-drawer-content-type">Exclusive :</span><span class="offer-drawer-content-text">This offer is only found on our site</span></div></div></li>';
+    '</div></div></div><div class="offer-drawer offer-drawer-exclusive"><span class="offer-drawer-content-type">Exclusive :</span><span class="offer-drawer-content-text">This offer is only found on <span class="offer-drawer-content-type">iVoge.com</span></span></div></div><br></li>';
   }
   document.getElementById("demoid").innerHTML = table;
 }
+$('#myModal').on('hidden.bs.modal', function () {
+  location.reload(); 
+});
 </script>
 </body>
 </html>
