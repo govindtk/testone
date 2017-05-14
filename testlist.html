@@ -11,7 +11,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-
 <script type="text/javascript">
 
             $(document).on("click", ".code-view", function () {
@@ -31,21 +30,32 @@
             }
 </script>
 
+<style type="text/css">
+  .button-primary,.button-show-code {
+        color: #fff !important;
+  }
+  .offer-redemption-block {
+    margin-bottom: 0px !important;
+  }
+    .button-primary,.button-show-code {
+        color: #fff !important;
+  }
+
+</style>
+
 <div class="container">
-  <h2>Small Modal</h2>
-  <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg code-view" data-id="11111111" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+        <div class="modal-header" style="background-color: rgb(37, 159, 196);">
+          <button type="button" class="close" data-dismiss="modal" style="color: rgba(0,0,0,.5) !important;">&times;</button>
+          <img src="https://lh3.googleusercontent.com/-190UWAy5N9c/WRfUEOeCxzI/AAAAAAAAABQ/eP23yLooESoZjy0xSxgs4YMY-IUpMLEEACLcB/h120/logo_ivoge.png" class="logo" alt="iVoge">
         </div>
         <div class="modal-body">
           <div class="offer-redemption-block">
+          <img src="https://lh3.googleusercontent.com/-IcqR0fHN2hQ/WRfU5xTXuEI/AAAAAAAAABY/O3nlEtAukSM7y0g8BMuXk2D_7T9ctyiIgCLcB/h100/godaddy.com-coupons.jpg" alt="GoDaddy">
             <div class="coupon-code">
               <p class="offer-tip">Copy and paste this code at <a class="js-merchant-link" target="_blank" href="https://godaddy.com" rel="nofollow">godaddy.com</a></p>
               <div class="code-attached-copy">
@@ -54,8 +64,8 @@
             </div>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="button button-primary" data-dismiss="modal">Close</button>
+        <div class="modal-footer" style="background-color: rgb(37, 159, 196);">
+          <button type="button" class="button button-primary" data-dismiss="modal" style="background-color: #e9e9e9 !important; border-color: #e9e9e9 !important; min-width: 80px !important; color: #101010 !important;">Close</button>
         </div>
       </div>
     </div>
@@ -142,8 +152,8 @@ function loadXMLDocF() {
       myFunctionF(this);
     }
   };
-  //xmlhttp.open("GET", "https://cdn.rawgit.com/govindtk/testone/e42e7180/myfile.xml", true);
-  xmlhttp.open("GET", "godaddy.xml", true);
+  xmlhttp.open("GET", "https://cdn.rawgit.com/govindtk/testone/a387eee8/godaddy.xml", true);
+  //xmlhttp.open("GET", "godaddy.xml", true);
   xmlhttp.send();
 }
 function myFunctionF(xml) {

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+  	<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://www.w3schools.com/howto/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+</style>
+  </style>
+
+</head>
+<body>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<div class="container">
+	<h2 style="text-align: center; font-family: monospace;">today's trending deals</h2>
+    <div id="products" class="row list-group">
+        <div class="item  col-xs-3 col-lg-3">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div id="caption1" class="caption">
+                    <a href="#">Bob</a>
+                    <p class="group inner list-group-item-text">
+                        Product description... </p>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-3 col-lg-3">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div id="caption2" class="caption">
+                    <a class="group inner list-group-item-heading" href="#">
+                        uber</a>
+                    <p class="group inner list-group-item-text">
+                        Product description... </p>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-3 col-lg-3">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <a class="group inner list-group-item-heading" href="#">
+                         amazon</a>
+                    <p class="group inner list-group-item-text">
+                        Product description... </p>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-3 col-lg-3">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <a class="group inner list-group-item-heading" href="#">
+                        kfc</a>
+                    <p class="group inner list-group-item-text">
+                        Product description... </p>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-3 col-lg-3">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <a class="group inner list-group-item-heading">
+                        Product title</a>
+                    <p class="group inner list-group-item-text">
+                        Product description... </p>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-3 col-lg-3">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+                <div class="caption">
+                    <a class="group inner list-group-item-heading">
+                        Product title</a>
+                    <p class="group inner list-group-item-text">
+                        Product description... </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function myFunction() {
+
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("products");
+    li = ul.getElementsByClassName("item");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+            //alert(li[i]);
+            //console.log(li[i]);
+
+        }
+    }
+}
+</script>
+
+</body>
+</html>
