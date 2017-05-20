@@ -3,7 +3,7 @@
 <coupon>
 	<amount><![CDATA[$2<br>OFF]]></amount>
 	<title>$2 Off Your Order</title>
-	<expiration></expiration>
+	<expiration>Nil</expiration>
 	<code>Seabass</code>
 	<description>Get $2 off your order</description>
 	<url>eat24hours.com</url>
@@ -11,7 +11,7 @@
 <coupon>
 	<amount><![CDATA[$5<br>OFF]]></amount>
 	<title>$5 Off Your Order</title>
-	<expiration></expiration>
+	<expiration>Nil</expiration>
 	<code>W45LJ</code>
 	<description>Get $5 Off Your Order</description>
 	<url>eat24hours.com</url>
