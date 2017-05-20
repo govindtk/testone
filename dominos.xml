@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <godaddy>
 <coupon>
-	<amount><![CDATA[PROMO<br>CODE]]></amount>
+	<amount><![CDATA[<span style="font-size: 15px;">PROMO</span><br>CODE]]></amount>
 	<title>2 for $5.99 Each on Select Items</title>
 	<expiration>05/29/17</expiration>
 	<code>9193</code>
@@ -9,9 +9,9 @@
 	<url>dominos.com</url>
 </coupon>
 <coupon>
-	<amount><![CDATA[PROMO<br>CODE]]></amount>
+	<amount><![CDATA[<span style="font-size: 15px;">PROMO</span><br>CODE]]></amount>
 	<title>Carry-Out Only! Large 3-Topping Pizza for $7.99</title>
-	<expiration></expiration>
+	<expiration>Nil</expiration>
 	<code>9174</code>
 	<description>Get a Large 3-Topping Pizza for $7.99 when you order online and pick up in-store</description>
 	<url>dominos.com</url>
