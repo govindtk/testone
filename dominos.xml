@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<godaddy>
+<coupon>
+	<amount><![CDATA[PROMO<br>CODE]]></amount>
+	<title>2 for $5.99 Each on Select Items</title>
+	<expiration>05/29/17</expiration>
+	<code>9193</code>
+	<description>Choose Any 2 or More: Medium 2-Topping Pizza, Oven Baked Sandwich, Stuffed Cheesy Bread, 8-piece Chicken, or Pasta in a Dish For Just $5.99 Each. All Locations. Limited time offer.</description>
+	<url>dominos.com</url>
+</coupon>
+<coupon>
+	<amount><![CDATA[PROMO<br>CODE]]></amount>
+	<title>Carry-Out Only! Large 3-Topping Pizza for $7.99</title>
+	<expiration></expiration>
+	<code>9174</code>
+	<description>Get a Large 3-Topping Pizza for $7.99 when you order online and pick up in-store</description>
+	<url>dominos.com</url>
+</coupon>
+</godaddy>

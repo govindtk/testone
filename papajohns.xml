@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<godaddy>
+<coupon>
+	<amount><![CDATA[50%<br>OFF]]></amount>
+	<title>50% Off Any Pizza at Regular Menu Price</title>
+	<expiration>05/29/17</expiration>
+	<code>SAVE50</code>
+	<description>Get a 50% off any pizza at regular menu price</description>
+	<url>papajohns.com</url>
+</coupon>
+<coupon>
+	<amount><![CDATA[25%<br>OFF]]></amount>
+	<title>25% Off Regular Menu Priced Orders</title>
+	<expiration>12/31/17</expiration>
+	<code>25OFF</code>
+	<description>Other promotions or special pricing.</description>
+	<url>papajohns.com</url>
+</coupon>
+<coupon>
+	<amount><![CDATA[50%<br>OFF]]></amount>
+	<title>50% Off Regular Menu Items</title>
+	<expiration>05/29/17</expiration>
+	<code>FANTASY50</code>
+	<description>Get 50% Off Regular Menu Items</description>
+	<url>papajohns.com</url>
+</coupon>
+
+</godaddy>

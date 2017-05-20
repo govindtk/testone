@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<godaddy>
+<coupon>
+	<amount><![CDATA[$10<br>OFF]]></amount>
+	<title>$10 Off First Order of $15</title>
+	<expiration></expiration>
+	<code>YUMMY</code>
+	<description>Limited use only! Get $10 off first order of $15</description>
+	<url>grubhub.com</url>
+</coupon>
+<coupon>
+	<amount><![CDATA[$7<br>OFF]]></amount>
+	<title>$7 Off First Time Order of $15</title>
+	<expiration></expiration>
+	<code>HUNGRY</code>
+	<description>Get $7 off first time order of $15. Limited use only.</description>
+	<url>grubhub.com</url>
+</coupon>
+</godaddy>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<godaddy>
+<coupon>
+	<amount><![CDATA[PROMO<br>CODE]]></amount>
+	<title>Medium 3 Topping for $6</title>
+	<expiration></expiration>
+	<code>TEOMED3T6</code>
+	<description>Get Medium 3 Topping for $6</description>
+	<url>pizzahut.com</url>
+</coupon>
+<coupon>
+	<amount><![CDATA[PROMO<br>CODE]]></amount>
+	<title>Any Large Pizza for $11</title>
+	<expiration></expiration>
+	<code>ELEVENONLINE</code>
+	<description>Get Any large pizza for $11.</description>
+	<url>pizzahut.com</url>
+</coupon>
+<coupon>
+	<amount><![CDATA[$5<br>OFF]]></amount>
+	<title>$5 Off Orders $25 Or More</title>
+	<expiration>Tomorrow</expiration>
+	<code>VISA5</code>
+	<description>Get $5 off orders $25 or more</description>
+	<url>pizzahut.com</url>
+</coupon>
+
+</godaddy>
