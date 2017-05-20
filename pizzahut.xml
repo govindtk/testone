@@ -3,7 +3,7 @@
 <coupon>
 	<amount><![CDATA[PROMO<br>CODE]]></amount>
 	<title>Medium 3 Topping for $6</title>
-	<expiration></expiration>
+	<expiration>Nil</expiration>
 	<code>TEOMED3T6</code>
 	<description>Get Medium 3 Topping for $6</description>
 	<url>pizzahut.com</url>
@@ -11,7 +11,7 @@
 <coupon>
 	<amount><![CDATA[PROMO<br>CODE]]></amount>
 	<title>Any Large Pizza for $11</title>
-	<expiration></expiration>
+	<expiration>Nil</expiration>
 	<code>ELEVENONLINE</code>
 	<description>Get Any large pizza for $11.</description>
 	<url>pizzahut.com</url>
