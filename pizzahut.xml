@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <godaddy>
 <coupon>
-	<amount><![CDATA[PROMO<br>CODE]]></amount>
+	<amount><![CDATA[<span style="font-size: 15px;">PROMO</span><br>CODE]]></amount>
 	<title>Medium 3 Topping for $6</title>
 	<expiration>Nil</expiration>
 	<code>TEOMED3T6</code>
@@ -9,7 +9,7 @@
 	<url>pizzahut.com</url>
 </coupon>
 <coupon>
-	<amount><![CDATA[PROMO<br>CODE]]></amount>
+	<amount><![CDATA[<span style="font-size: 15px;">PROMO</span><br>CODE]]></amount>
 	<title>Any Large Pizza for $11</title>
 	<expiration>Nil</expiration>
 	<code>ELEVENONLINE</code>
