@@ -152,8 +152,8 @@ function loadXMLDocF() {
       myFunctionF(this);
     }
   };
-  xmlhttp.open("GET", "https://cdn.rawgit.com/govindtk/testone/a387eee8/godaddy.xml", true);
-  //xmlhttp.open("GET", "godaddy.xml", true);
+  //xmlhttp.open("GET", "https://cdn.rawgit.com/govindtk/testone/a387eee8/godaddy.xml", true);
+  xmlhttp.open("GET", "kohls.xml", true);
   xmlhttp.send();
 }
 function myFunctionF(xml) {
@@ -164,7 +164,7 @@ function myFunctionF(xml) {
   for (i = 0; i <x.length; i++) { 
     table += '<li class="js-offer-toggle "><div class="offer-item offer-item-in-list js-offer"><div class="offer-item-content"><div class="offer-anchor"><div class="coupon-anchor-code"><div class="coupon-anchor-amount">' +
     x[i].getElementsByTagName("amount")[0].childNodes[0].nodeValue +
-    '%<br>OFF </div><div class="coupon-anchor-label">Code</div></div></div><div class="offer-actions"><a href="" class="button-show-code offer-button code-view" data-id="' +
+    '</div><div class="coupon-anchor-label">Code</div></div></div><div class="offer-actions"><a href="" class="button-show-code offer-button code-view" data-id="' +
     x[i].getElementsByTagName("code")[0].childNodes[0].nodeValue +
     '" data-toggle="modal" data-target="#myModal" data-revealed-code="' +
     x[i].getElementsByTagName("code")[0].childNodes[0].nodeValue +

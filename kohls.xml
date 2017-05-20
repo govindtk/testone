@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<godaddy>
+<coupon>
+	<amount><![CDATA[30%<br>OFF]]></amount>
+	<title>30% Off With Kohl's Charge</title>
+	<expiration>Tomorrow</expiration>
+	<code>MOM30</code>
+	<description>Take 30% off when you use your Kohl's Charge</description>
+	<url>kohls.com</url>
+</coupon>
+<coupon>
+	<amount><![CDATA[15%<br>OFF]]></amount>
+	<title>15% Off Over $100 Purchase + Free Shipping</title>
+	<expiration>12/31/17</expiration>
+	<code>RMN15OFF</code>
+	<description>Get 15% Off when you spend $100 or more + Free shipping. No Kohl's Charge card needed.</description>
+	<url>kohls.com</url>
+</coupon>
+<coupon>
+	<amount><![CDATA[FREE<br><span style="font-size: 12px;">SHIPPING</span>]]></amount>
+	<title>Free Shipping With Kohls Charge</title>
+	<expiration>Tomorrow</expiration>
+	<code>FREE4MAY</code>
+	<description>Get Free shipping with Kohls charge</description>
+	<url>kohls.com</url>
+</coupon>
+
+</godaddy>
